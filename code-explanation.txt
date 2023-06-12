@@ -1,0 +1,198 @@
+HTML:
+
+This is an HTML document that represents a BMI Calculator web page. Here's an explanation of the different elements in the code:
+
+- `<!DOCTYPE html>`: This declaration specifies the HTML version being used, which is HTML5 in this case.
+
+- `<html>`: The root element of an HTML document.
+
+- `<head>`: This section contains meta-information about the web page, such as character encoding, viewport settings, author information, and the page title.
+
+- `<meta charset="UTF-8">`: Specifies the character encoding for the document, ensuring proper interpretation of special characters.
+
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Sets the viewport properties for responsive web design, ensuring the page adjusts properly to different device widths and initial zoom levels.
+
+- `<meta name="description" content="Calculate your BMI (Body Mass Index) and get a result interpretation.">`: Provides a brief description of the web page, which is often used by search engines and other applications.
+
+- `<meta name="author" content="Olaoluwa Akinfenwa">`: Specifies the author of the web page.
+
+- `<meta name="robots" content="index, follow">`: Informs web robots (like search engine crawlers) to index and follow the links on the page.
+
+- `<title>BMI Calculator</title>`: Sets the title of the web page, which is displayed in the browser's title bar or tab.
+
+- `<link rel="stylesheet" href="styles.css">`: Links an external CSS file (styles.css) to the HTML document, allowing for separate styling.
+
+- `<script src="https://kit.fontawesome.com/7624c7c0d1.js" crossorigin="anonymous"></script>`: Loads an external JavaScript file from a Content Delivery Network (CDN). It provides access to the Font Awesome library for using icons in the web page.
+
+- `<body>`: Represents the content of the web page.
+
+- `<h1>BMI Calculator</h1>`: Displays a heading at the top of the page, indicating the name of the BMI Calculator.
+
+- `<div class="container">`: Defines a container element to hold the BMI input fields, unit selectors, calculate button, and result display.
+
+- `<label for="weight">Weight:</label>`: Creates a label for the weight input field.
+
+- `<input type="number" id="weight" required>`: Specifies an input field for entering the weight, which only accepts numeric values and is required.
+
+- `<select id="weightUnit">`: Defines a dropdown/select element for selecting the weight unit (kilograms or pounds).
+
+- `<option value="kg">kg</option>`: Represents an option in the weight unit selector, with the value "kg" and the displayed text "kg".
+
+- `<option value="lb">lb</option>`: Represents another option in the weight unit selector, with the value "lb" and the displayed text "lb".
+
+- `<label for="height">Height:</label>`: Creates a label for the height input field.
+
+- `<input type="number" id="height" required>`: Specifies an input field for entering the height, which only accepts numeric values and is required.
+
+- `<select id="heightUnit">`: Defines a dropdown/select element for selecting the height unit (centimeters or inches).
+
+- `<option value="cm">cm</option>`: Represents an option in the height unit selector, with the value "cm" and the displayed text "cm".
+
+- `<option value="in">in</option>`: Represents another option in the height unit selector, with the value "in" and the displayed text "in".
+
+- `<button onclick="calculateBMI()">Calculate</button
+
+>`: Creates a button element that triggers the `calculateBMI()` JavaScript function when clicked.
+
+- `<div id="result"></div>`: Defines an empty div element where the BMI result will be displayed.
+
+- `<footer>`: Represents the footer section of the web page.
+
+- `<p>&copy; 2023 Olaoluwa Akinfenwa. All rights reserved.</p>`: Displays a copyright notice.
+
+- `<div class="social-icons">`: Defines a container for social media icons.
+
+- `<a href="https://www.linkedin.com/in/olaoluwa-akinfenwa-b44026208" class="linkedin" target="_blank">`: Creates a link to the LinkedIn profile of the author.
+
+- `<i class="fab fa-linkedin-in"></i>`: Inserts the LinkedIn icon from the Font Awesome library.
+
+- Similar code blocks are present for the Twitter and email icons.
+
+- `<script src="script.js"></script>`: Links an external JavaScript file (script.js) to the HTML document, containing the BMI calculation logic and result display.
+
+Overall, this HTML code sets up the structure and elements required for a BMI Calculator web page, including inputs for weight and height, unit selectors, a calculate button, result display, and footer with social media links.
+
+CSS:
+
+This code represents a CSS stylesheet that defines the styles and visual appearance of elements on a web page. Here's an explanation of the different CSS rules and their effects:
+
+- `body`: Selects the `<body>` element and applies the following styles:
+  - `font-family: Arial, sans-serif;`: Sets the font family for the entire page to Arial or a sans-serif fallback.
+  - `background-color: #f9f9f9;`: Sets the background color of the body to a light gray (#f9f9f9).
+  - `padding: 20px;`: Adds 20 pixels of padding to the content inside the body.
+
+- `h1`: Selects all `<h1>` elements and applies the following styles:
+  - `text-align: center;`: Centers the text within the `<h1>` elements.
+
+- `.container`: Selects elements with the class "container" and applies the following styles:
+  - `max-width: 400px;`: Sets the maximum width of the container to 400 pixels.
+  - `margin: 20px auto;`: Adds a 20-pixel margin around the container, with automatic left and right margins for centering.
+  - `background-color: #fff;`: Sets the background color of the container to white (#fff).
+  - `padding: 20px;`: Adds 20 pixels of padding to the content inside the container.
+  - `border-radius: 4px;`: Rounds the corners of the container with a 4-pixel border radius.
+  - `box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);`: Adds a slight shadow to the container to give it a 3D effect.
+
+- `label`: Selects all `<label>` elements and applies the following styles:
+  - `display: block;`: Displays the labels as block-level elements, causing them to start on a new line.
+  - `margin-bottom: 5px;`: Adds a 5-pixel margin at the bottom of the labels, creating some vertical spacing.
+
+- `input[type="number"]`: Selects input elements of type "number" and applies the following styles:
+  - `width: 95%;`: Sets the width of the input fields to 95% of their parent container.
+  - `padding: 10px;`: Adds 10 pixels of padding to the content inside the input fields.
+  - `margin-bottom: 10px;`: Adds a 10-pixel margin at the bottom of the input fields, creating vertical spacing.
+
+- `#weightUnit, #heightUnit`: Selects elements with the IDs "weightUnit" and "heightUnit" and applies the following styles:
+  - `margin-bottom: 10px;`: Adds a 10-pixel margin at the bottom of the unit selectors, creating vertical spacing.
+
+- `button`: Selects all `<button>` elements and applies the following styles:
+  - `display: block;`: Displays the buttons as block-level elements, causing them to start on a new line.
+  - `width: 100%;`: Sets the width of the buttons to 100% of their parent container.
+  - `padding: 10px;`: Adds 10 pixels of padding to the content inside the buttons.
+  - `background-color: #171b82;`: Sets the background color of the buttons to a dark blue (#171b82).
+  - `color: #fff;`: Sets the text color of the buttons to white (#fff).
+  - `border: none;`: Removes the border around the buttons.
+  - `border-radius: 4px;`: Rounds the
+
+ corners of the buttons with a 4-pixel border radius.
+  - `cursor: pointer;`: Changes the cursor to a pointer when hovering over the buttons.
+
+- `button:hover`: Selects all `<button>` elements when hovered over and applies the following styles:
+  - `background-color: #0056b3;`: Changes the background color of the buttons to a darker blue (#0056b3) when hovered over.
+
+- `#result`: Selects the element with the ID "result" and applies the following styles:
+  - `margin-top: 20px;`: Adds a 20-pixel margin at the top of the result element, creating vertical spacing.
+  - `text-align: center;`: Centers the text within the result element.
+  - `font-weight: bold;`: Sets the font weight of the text within the result element to bold.
+
+- `footer`: Selects the footer element and applies the following styles:
+  - `background-color: #f8f8f8;`: Sets the background color of the footer to a very light gray (#f8f8f8).
+  - `color: #888;`: Sets the text color of the footer to a light gray (#888).
+  - `padding: 10px;`: Adds 10 pixels of padding to the content inside the footer.
+  - `text-align: center;`: Centers the text within the footer.
+  - `border-radius: 0 0 10px 10px;`: Rounds the bottom corners of the footer with a 10-pixel border radius.
+  - `box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);`: Adds a slight shadow to the top of the footer to give it a 3D effect.
+  - `margin-top: 50px;`: Adds a 50-pixel margin at the top of the footer, creating vertical spacing.
+
+- `.social-icons`: Selects elements with the class "social-icons" and applies the following styles:
+  - `margin-top: 10px;`: Adds a 10-pixel margin at the top of the social icons container, creating vertical spacing.
+
+- `.social-icons a`: Selects all `<a>` elements within the social icons container and applies the following styles:
+  - `display: inline-block;`: Displays the social icons as inline-block elements, allowing them to appear next to each other.
+  - `margin-right: 10px;`: Adds a 10-pixel margin to the right of each social icon, creating horizontal spacing.
+  - `color: #333;`: Sets the color of the social icons to a dark gray (#333).
+
+- `.social-icons i`: Selects all `<i>` elements within the social icons container and applies the following styles:
+  - `font-size: 24px;`: Sets the font size of the social icons to 24 pixels.
+  - `transition: color 0.2s;`: Adds a smooth color transition effect with a duration of 0.2 seconds.
+
+- `.social-icons a:hover i`: Selects all `<i>` elements within the social icons container when hovered over and applies the following styles:
+  - `color: #171b82;`: Changes the color of the social icons to a dark blue (#171b82) when hovered over.
+
+- `.social-icons a.linkedin:hover i`: Selects the LinkedIn icon within the social icons container when hovered over and applies the following styles:
+  - `color: #0A66C2;`: Changes the color of the LinkedIn icon to a specific shade of blue (#0A66C2) when hovered over.
+
+- `.social-icons a.twitter:hover
+
+ i`: Selects the Twitter icon within the social icons container when hovered over and applies the following styles:
+  - `color: #00acee;`: Changes the color of the Twitter icon to a specific shade of blue (#00acee) when hovered over.
+
+- `.social-icons a.email:hover i`: Selects the email icon within the social icons container when hovered over and applies the following styles:
+  - `color: #171b82;`: Changes the color of the email icon to a dark blue (#171b82) when hovered over.
+
+These CSS rules define the layout, styling, and interactivity of the elements within the provided HTML code, creating a visually appealing and responsive BMI calculator webpage.
+
+JavaScript: 
+
+This code is a JavaScript function called `calculateBMI()` that calculates the Body Mass Index (BMI) based on user input and displays the result on the webpage.
+
+Here's a breakdown of what the code does:
+
+1. It retrieves the necessary input elements from the HTML using `document.getElementById()` and stores them in variables:
+   - `weightInput`: Represents the weight input field.
+   - `heightInput`: Represents the height input field.
+   - `weightUnit`: Represents the selected weight unit (kg or lb).
+   - `heightUnit`: Represents the selected height unit (cm or in).
+   - `resultDiv`: Represents the HTML element where the BMI result will be displayed.
+
+2. It extracts the numeric values entered by the user from the input fields using `parseFloat()` and stores them in variables:
+   - `weight`: Represents the weight value.
+   - `height`: Represents the height value.
+
+3. It performs unit conversions if necessary:
+   - If the weight unit is selected as "lb," the weight value is converted to kilograms by multiplying it by the conversion factor 0.45359237.
+   - If the height unit is selected as "in," the height value is converted to centimeters by multiplying it by the conversion factor 2.54.
+
+4. It performs input validation:
+   - It checks if either the weight or height value is not a number (`isNaN()`), or if the weight or height is less than or equal to zero. If any of these conditions are met, it displays an error message in the `resultDiv` and returns from the function.
+
+5. It calculates the BMI using the formula: BMI = weight / ((height / 100) * (height / 100)). The BMI value is rounded to two decimal places using the `toFixed()` method.
+
+6. It determines the BMI category based on the calculated BMI value:
+   - If the BMI is less than 18.5, the category is set as "Underweight."
+   - If the BMI is between 18.5 and 25, the category is set as "Normal Weight."
+   - If the BMI is between 25 and 30, the category is set as "Overweight."
+   - If the BMI is greater than or equal to 30, the category is set as "Obese."
+
+7. It displays the calculated BMI value and category in the `resultDiv` by setting its `textContent` property.
+
+Overall, this JavaScript function takes user input for weight and height, performs unit conversions if necessary, calculates the BMI, and displays the result with the corresponding category on the webpage.
