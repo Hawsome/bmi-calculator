@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate your BMI (Body Mass Index) and get a result interpretation.">
+  <meta name="author" content="Olaoluwa Akinfenwa">
+  <meta name="robots" content="index, follow">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7624c7c0d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>BMI Calculator</h1>
+  <div class="container">
+    <label for="weight">Weight:</label>
+    <input type="number" id="weight" required>
+    <select id="weightUnit">
+      <option value="kg">kg</option>
+      <option value="lb">lb</option>
+    </select>
+    <label for="height">Height:</label>
+    <input type="number" id="height" required>
+    <select id="heightUnit">
+      <option value="cm">cm</option>
+      <option value="in">in</option>
+    </select>
+    <button onclick="calculateBMI()">Calculate</button>
+    <div id="result"></div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Olaoluwa Akinfenwa. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/olaoluwa-akinfenwa-b44026208" class="linkedin" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/hawsome_a" class="twitter" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:awesome.akinfenwa@outlook.com" class="email" target="_blank">
+            <i class="far fa-envelope"></i>
+        </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
